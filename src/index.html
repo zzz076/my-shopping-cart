@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my shopping cart</title>
+    <link rel="stylesheet" href="./css/all.css" />
+    <script
+      src="https://kit.fontawesome.com/769d2a0535.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav>
+      <div class="nav-container">
+        <div class="logo">Tim</div>
+        <div class="nav-btns">
+          <div class="nav-tags">
+            <!-- test -->
+            <button class="tag-btn nav-tag all-tag-btn active" onclick="filterObjects('all')">All</button>
+            <button class="tag-btn nav-tag men-tag-btn" onclick="filterObjects('boys-stuff')">男款</button>
+            <button class="tag-btn nav-tag women-tag-btn" onclick="filterObjects('girls-stuff')">女款</button>
+            <!-- test -->
+          </div>
+          <div class="cart-icon">
+            <i class="fa-solid fa-cart-shopping nav-btn"></i>
+          </div>
+        </div>
+        <!-- Cart -->
+        <div class="cart">
+          <div class="cart-title">Your Cart</div>
+          <div class="cart-content">
+            <!-- <div class="cart-box">
+              <img
+                src="./assets/img/NIke force1 小童.png"
+                alt=""
+                class="cart-img"
+              />
+              <div class="cart-describe">
+                <div class="cart-describe-title">Nike Force1</div>
+                <div class="cart-describe-tag">
+                  <div class="tag">小童</div>
+                </div>
+                <div class="cart-price">$60.03</div>
+                <input type="number" value="1" class="cart-item-quantity" />
+              </div>
+              <i class="fa-solid fa-trash cart-box-delete"></i>
+            </div> -->
+          
+          </div>
+          <div class="total">
+            <div class="total-title">Total:</div>
+            <div class="total-price">$0</div>
+          </div>
+          <button class="cart-buy">Buy Now</button>
+          <div class="cart-leave">
+            <i class="fa-solid fa-xmark leave"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- title -->
+    <div class="shop-title">
+      <h2>Shoes</h2>
+    </div>
+    <!-- Shop -->
+    <div class="shop">
+      <div class="shop-container">
+        <!-- Box1 -->
+        <div class="product-box boys-stuff">
+          <img
+            class="product-img"
+            src="./assets/img/NIke Air Force1.png"
+            alt=""
+          />
+          <div class="product-title">Nike Air force1</div>
+          <div class="product-tag">
+            <div class="tag men">男款</div>
+          </div>
+          <div class="product-price">$92.6</div>
+          <i class="fa-solid fa-cart-plus add-cart"></i>
+        </div>
+        <!-- Box2 -->
+        <div class="product-box boys-stuff">
+          <img
+            class="product-img"
+            src="./assets/img/Air Jordan 3 Retro.png"
+            alt=""
+          />
+          <div class="product-title ">Air Jordan 3 Retro</div>
+          <div class="product-tag">
+            <div class="tag men">男款</div>
+          </div>
+          <div class="product-price">$68.37</div>
+          <i class="fa-solid fa-cart-plus add-cart"></i>
+        </div>
+        <!-- Box3 -->
+        <div class="product-box girls-stuff">
+          <img
+            class="product-img"
+            src="./assets/img/Nike Canvas.png"
+            alt=""
+          />
+          <div class="product-title">Nike Canvas</div>
+          <div class="product-tag">
+            <div class="tag women">女款 </div>
+          </div>
+          <div class="product-price">$52.88</div>
+          <i class="fa-solid fa-cart-plus add-cart"></i>
+        </div>
+        <!-- Box4 -->
+        <div class="product-box girls-stuff">
+          <img
+            class="product-img"
+            src="./assets/img/Nike DBreak.png"
+            alt=""
+          />
+          <div class="product-title">Nike DBreak</div>
+          <div class="product-tag">
+            <div class="tag women">女款</div>
+          </div>
+          <div class="product-price">$70.69</div>
+          <i class="fa-solid fa-cart-plus add-cart"></i>
+        </div>
+        <!-- Box5 -->
+        <div class="product-box boys-stuff">
+          <img
+            class="product-img"
+            src="./assets/img/NIke Dunk.png"
+            alt=""
+          />
+          <div class="product-title">NIke Dunk</div>
+          <div class="product-tag">
+            <div class="tag men">男款</div>
+          </div>
+          <div class="product-price">$82.54</div>
+          <i class="fa-solid fa-cart-plus add-cart"></i>
+        </div>
+        <!-- Box6 -->
+        <div class="product-box boys-stuff">
+          <img
+            class="product-img"
+            src="./assets/img/Nike Offcourt.png"
+            alt=""
+          />
+          <div class="product-title">Nike Offcourt</div>
+          <div class="product-tag">
+            <div class="tag men">男款</div>
+          </div>
+          <div class="product-price">$22.6</div>
+          <i class="fa-solid fa-cart-plus add-cart"></i>
+        </div>
+         <!-- Box7 -->
+         <div class="product-box girls-stuff">
+          <img
+            class="product-img"
+            src="./assets/img/Nike Waffle Debut.png"
+            alt=""
+          />
+          <div class="product-title">Nike Waffle Debut</div>
+          <div class="product-tag">
+            <div class="tag women">女款</div>
+          </div>
+          <div class="product-price">$93.61</div>
+          <i class="fa-solid fa-cart-plus add-cart"></i>
+        </div>
+         <!-- Box8 -->
+         <div class="product-box boys-stuff">
+          <img
+            class="product-img"
+            src="./assets/img/Nike Metcon 8.png"
+            alt=""
+          />
+          <div class="product-title">Nike Metcon 8</div>
+          <div class="product-tag">
+            <div class="tag men">男款</div>
+          </div>
+          <div class="product-price">$121.2</div>
+          <i class="fa-solid fa-cart-plus add-cart"></i>
+        </div>
+      </div>
+    </div>
+    <footer></footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
